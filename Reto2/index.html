@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackaton13</title>
+    <link rel="stylesheet" href="/Reto2/form.css">
+
+</head>
+<body>
+    
+    <div class="barraini">
+    <h2 id="titulo">Dog Crud</h2>
+    
+    <span class="addpet" id="btnAM" onclick="ModalAM()">Agregar Mascota</span>
+    
+    <form id="formAM" class="formcont" action="">
+        
+        <div class="geneAM">
+
+            <div class="barraAM">
+                <h2 style="padding-left: 40px;">Agregar mascota</h2>
+                <span class="close1" >X</span>
+            </div>
+
+            <div class="formtAM">
+            
+            <input type="text" name="nombre" id="" placeholder="Name">
+            <input type="text" name="telefono" id="" placeholder="Telefono">
+            <input type="email" name="Correo" id="" placeholder="Correo">
+            <input type="text" name="pais" id="" placeholder="Pais">
+            <input type="text" name="acercad" id="" placeholder="Acerca de mi">
+            <input type="text" name="otrosd" id="" placeholder="Otros datos">
+
+            <button class="btn">Aceptar</button>
+            <button id="btncanAM" class="btn">Cancelar</button>
+
+
+        </div>
+        </div>
+    </form>
+
+
+    </div>
+    
+    <div id="contenedor">
+
+        <div class="ima1">
+
+         
+
+            <div class="imgini">
+                <div class="edit">
+                    <img class="edpet" id="btnED" onclick="ModalED()" src="/Reto2/Fotos/edit.png" alt="">
+    
+                <form id="formED" class="formcontED" action="">
+                    
+                    <div class="geneED">
+
+                        <div class="barraED">
+                            <h2 style="padding-left: 40px;">Agregar mascota</h2>
+                            <span class="close0" >X</span>
+                        </div>
+
+                        <div class="formtED">
+                        
+                        <input type="text" name="nombre" id="" placeholder="Name">
+                        <input type="text" name="telefono" id="" placeholder="Telefono">
+                        <input type="email" name="Correo" id="" placeholder="Correo">
+                        <input type="text" name="pais" id="" placeholder="Pais">
+                        <input type="text" name="acercad" id="" placeholder="Acerca de mi">
+                        <input type="text" name="otrosd" id="" placeholder="Otros datos">
+
+                        <button class="btn">Aceptar</button>
+                        <button id="btncanED" class="btn">Cancelar</button>
+
+
+                    </div>
+                    </div>
+                </form>
+
+
+
+
+                    <span >Edit</span>
+                </div>
+
+
+                <div class="close">
+
+                    <img class="delete" id="boton2" onclick="Modal2()" src="/Reto2/Fotos/delete.png" alt="">
+                  
+
+                    <div id="verModal2" class="modalContainer2">
+                        <div class="modal-content2">
+                            <span class="close2">×</span>
+                            <h2 style="padding-top: 30px;">Estas seguro que quieres eliminar esta mascota??</h2>
+                            
+                            <button class="btn">Aceptar</button>
+                            <button id="btncancelar" class="btn">Cancelar</button>
+
+                        </div>
+                    </div>
+                    <span >Delete</span>
+                </div>
+
+            </div>
+
+            <img class="foto" src="/Reto2/Fotos/1.png" alt="">
+
+            <h2 style="margin: 0px;">Nombre </h2>
+
+            
+            <div class="cortel">
+                <div style="text-align: right;"> 
+                    Telefono 
+                </div>
+
+                <div style="text-align: left;"> 
+                     | Correo
+                </div>
+
+            </div>
+
+            <div > 
+                Pais
+            </div>
+
+            <article>
+                About me about me about me about me about me about me about me about me
+            </article>
+            <br>
+
+        </div>
+      
+
+
+        <div class="ima">
+
+            <div class="imgini">
+                <div class="edit">
+                    <img src="/Reto2/Fotos/edit.png" alt="">
+                    <span >Edit</span>
+                </div>
+
+
+                <div class="close">
+
+                    <img class="delete" id="boton3" onclick="Modal3()" src="/Reto2/Fotos/delete.png" alt="">
+                  
+
+                    <div id="verModal3" class="modalContainer3">
+                        <div class="modal-content3">
+                            <span class="close3">×</span>
+                            <h2 style="padding-top: 30px;">Estas seguro que quieres eliminar esta mascota??</h2>
+                            
+                            <button class="btn">Aceptar</button>
+                            <button id="btncancelar2" class="btn">Cancelar</button>
+
+                        </div>
+                    </div>
+                    <span >Delete</span>
+                </div>
+
+            </div>
+
+            
+            <img class="foto" src="/Reto2/Fotos/2.png" alt="">
+
+            <h2 style="margin: 0px;">Nombre </h2>
+
+            <div class="cortel">
+                <div style="text-align: right;"> 
+                    Telefono 
+                </div>
+
+                <div style="text-align: left;"> 
+                     | Correo
+                </div>
+
+            </div>
+
+            <div > 
+                Pais
+            </div>
+
+            <article>
+                About me about me about me about me about me about me about me about me   
+            </article>
+            <br>
+
+        </div>
+
+        <div class="ima">
+
+            <div class="imgini">
+                <div class="edit">
+                    <img src="/Reto2/Fotos/edit.png" alt="">
+                    <span >Edit</span>
+                </div>
+
+
+                <div class="close">
+                    <img class="delete" src="/Reto2/Fotos/delete.png" alt="">
+                    <span >Delete</span>
+                </div>
+            </div>
+
+            <img class="foto" src="/Reto2/Fotos/3.png" alt="">
+
+            <h2 style="margin: 0px;">Nombre </h2>
+
+            <div class="cortel">
+                <div style="text-align: right;"> 
+                    Telefono 
+                </div>
+
+                <div style="text-align: left;"> 
+                     | Correo
+                </div>
+
+            </div>
+
+            <div > 
+                Pais
+            </div>
+
+            <article>
+                About me about me about me about me about me about me about me about me  
+            </article>
+            <br>
+
+        </div>
+
+        <div class="ima">
+
+            <div class="imgini">
+                <div class="edit">
+                    <img src="/Reto2/Fotos/edit.png" alt="">
+                    <span >Edit</span>
+                </div>
+
+
+                <div class="close">
+                    <img class="delete" src="/Reto2/Fotos/delete.png" alt="">
+                    <span >Delete</span>
+                </div>
+            </div>
+
+            <img class="foto" src="/Reto2/Fotos/4.png" alt="">
+
+            <h2 style="margin: 0px;">Nombre </h2>
+
+            <div class="cortel">
+                <div style="text-align: right;"> 
+                    Telefono 
+                </div>
+
+                <div style="text-align: left;"> 
+                     | Correo
+                </div>
+
+            </div>
+
+            <div > 
+                Pais
+            </div>
+
+            <article>
+                About me about me about me about me about me about me about me about me
+            </article>
+            <br>
+
+        </div>
+
+        <div class="ima">
+
+            <div class="imgini">
+                <div class="edit">
+                    <img src="/Reto2/Fotos/edit.png" alt="">
+                    <span >Edit</span>
+                </div>
+
+
+                <div class="close">
+                    <img class="delete" src="/Reto2/Fotos/delete.png" alt="">
+                    <span >Delete</span>
+                </div>
+            </div>
+
+            <img class="foto" src="/Reto2/Fotos/5.png" alt="">
+
+            <h2 style="margin: 0px;">Nombre </h2>
+
+            <div class="cortel">
+                <div style="text-align: right;"> 
+                    Telefono 
+                </div>
+
+                <div style="text-align: left;"> 
+                     | Correo
+                </div>
+
+            </div>
+
+            <div> 
+                Pais
+            </div>
+
+            <article>
+                About me about me about me about me about me about me about me about me    
+            </article>
+            <br>
+
+        </div>
+
+        <div class="ima">
+
+            <div class="imgini">
+                <div class="edit">
+                    <img src="/Reto2/Fotos/edit.png" alt="">
+                    <span >Edit</span>
+                </div>
+
+
+                <div class="close">
+                    <img class="delete" src="/Reto2/Fotos/delete.png" alt="">
+                    <span >Delete</span>
+                </div>
+            </div>
+
+            <img class="foto" src="/Reto2/Fotos/6.png" alt="">
+
+            <h2 style="margin: 0px;">Nombre </h2>
+
+            <div class="cortel">
+                <div style="text-align: right;"> 
+                    Telefono 
+                </div>
+
+                <div style="text-align: left;"> 
+                     | Correo
+                </div>
+
+            </div>
+
+            <div > 
+                Pais
+            </div>
+
+            <article>
+                About me about me about me about me about me about me about me about me 
+            </article>
+            <br>
+
+        </div>
+
+        <div class="ima">
+
+            <div class="imgini">
+                <div class="edit">
+                    <img src="/Reto2/Fotos/edit.png" alt="">
+                    <span >Edit</span>
+                </div>
+
+
+                <div class="close">
+                    <img class="delete" src="/Reto2/Fotos/delete.png" alt="">
+                    <span >Delete</span>
+                </div>
+            </div>
+
+            <img class="foto" src="/Reto2/Fotos/7.png" alt="">
+
+            <h2 style="margin: 0px;">Nombre </h2>
+
+            <div class="cortel">
+                <div style="text-align: right;"> 
+                    Telefono 
+                </div>
+
+                <div style="text-align: left;"> 
+                     | Correo
+                </div>
+
+            </div>
+
+            <div > 
+                Pais
+            </div>
+
+            <article>
+                About me about me about me about me about me about me about me about me  
+            </article>
+            <br>
+
+        </div>
+
+        <div class="ima">
+
+            <div class="imgini">
+                <div class="edit">
+                    <img src="/Reto2/Fotos/edit.png" alt="">
+                    <span >Edit</span>
+                </div>
+
+
+                <div class="close">
+                    <img class="delete" src="/Reto2/Fotos/delete.png" alt="">
+                    <span >Delete</span>
+                </div>
+            </div>
+
+            <img class="foto" src="/Reto2/Fotos/8.png" alt="">
+
+            <h2 style="margin: 0px;">Nombre </h2>
+
+            <div class="cortel">
+                <div style="text-align: right;"> 
+                    Telefono 
+                </div>
+
+                <div style="text-align: left;"> 
+                     | Correo
+                </div>
+
+            </div>
+
+            <div > 
+                Pais
+            </div>
+
+            <article>
+                About me about me about me about me about me about me about me about me 
+            </article>
+            <br>
+
+        </div>
+
+
+        
+
+
+</div>
+    <script src="/Reto2/main.js"></script>
+    
+</body>
+</html>
